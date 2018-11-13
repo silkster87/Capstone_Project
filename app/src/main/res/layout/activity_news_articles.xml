@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/news_articles_coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:fitsSystemWindows="true"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".NewsArticles">
+
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/news_articles_toolbar"
+            style="@style/ToolBarStyle">
+        </android.support.v7.widget.Toolbar>
+
+
+        <LinearLayout
+            android:id="@+id/news_articles_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/news_articles_toolbar">
+
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/sources_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/news_articles_toolbar"
+                app:tabMode="scrollable" />
+
+            <TextView
+                android:id="@+id/error_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/article_marginTop"
+                android:text="@string/error_message"
+                android:textSize="@dimen/article_title_textSize"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar_articles"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                app:layout_constraintBottom_toBottomOf="@+id/news_articles_linear_layout"
+                app:layout_constraintLeft_toLeftOf="@+id/news_articles_linear_layout"
+                app:layout_constraintRight_toRightOf="@+id/news_articles_linear_layout"
+                app:layout_constraintTop_toTopOf="@+id/news_articles_linear_layout" />
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/news_articles_viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                app:layout_constraintTop_toBottomOf="@+id/sources_tabs" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

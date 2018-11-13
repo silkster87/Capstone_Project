@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--When user clicks on article it will take user to the article through the url. Set a click listener -->
+    <ImageView
+        android:id="@+id/article_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/article_image_height"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/article_image" />
+
+    <TextView
+        android:id="@+id/article_title"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.8"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/article_image"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="@dimen/article_title_textSize"
+        android:layout_marginStart="@dimen/article_marginStart"
+        android:layout_marginEnd="@dimen/article_marginStart"
+        android:layout_marginTop="@dimen/article_marginTop"
+        android:paddingTop="@dimen/article_marginStart" />
+
+
+
+    <TextView
+        android:id="@+id/article_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/article_author_textSize"
+        app:layout_constraintTop_toBottomOf="@+id/article_title"
+        android:layout_marginTop="@dimen/article_marginStart"
+        android:paddingStart="@dimen/article_marginStart"
+        android:paddingEnd="@dimen/article_marginStart"/>
+
+    <TextView
+        android:id="@+id/article_published_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/article_author_textSize"
+        app:layout_constraintLeft_toRightOf="@+id/article_author"
+        app:layout_constraintTop_toBottomOf="@+id/article_title"
+        android:layout_marginTop="@dimen/article_marginStart"
+        android:paddingStart="@dimen/article_marginStart"
+        android:paddingEnd="@dimen/article_marginStart"/>
+
+    <TextView
+        android:id="@+id/article_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/article_author"
+        android:paddingStart="@dimen/article_marginStart"
+        android:paddingEnd="@dimen/article_marginStart"
+        android:paddingTop="@dimen/article_marginStart"
+        android:paddingBottom="@dimen/article_marginTop"/>
+
+    <ImageView
+        android:id="@+id/bookmark_article"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_bookmark_white_18dp"
+        app:layout_constraintLeft_toRightOf="@+id/article_title"
+        app:layout_constraintTop_toTopOf="@+id/article_title"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingTop="@dimen/article_marginStart"
+        android:contentDescription="@string/bookmark_icon"
+        />
+
+    <ImageView
+        android:id="@+id/share_article"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/share_white"
+        app:layout_constraintRight_toRightOf="@+id/bookmark_article"
+        app:layout_constraintTop_toBottomOf="@+id/article_desc"
+        app:layout_constraintLeft_toLeftOf="@+id/bookmark_article"
+        android:paddingBottom="@dimen/article_marginStart"
+        android:contentDescription="@string/share_icon" />
+
+    <View
+        android:id="@+id/line_divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"
+        app:layout_constraintTop_toBottomOf="@+id/share_article"/>
+
+
+
+</android.support.constraint.ConstraintLayout>
+

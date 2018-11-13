@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rhs_fragment_coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/article_image_rhs"
+        android:contentDescription="@string/article_image_desc"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="400dp"
+        />
+
+    <TextView
+        android:id="@+id/article_desc_rhs"
+        app:layout_constraintTop_toBottomOf="@+id/article_image_rhs"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:paddingTop="@dimen/article_marginTop"
+        android:paddingStart="@dimen/article_marginStart"
+        android:paddingEnd="@dimen/article_marginStart"/>
+
+    <ImageView
+        android:id="@+id/article_bookmark_tablet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_bookmark_border_white_18dp"
+        app:layout_constraintTop_toBottomOf="@+id/article_desc_rhs"
+        app:layout_constraintRight_toLeftOf="@+id/article_share_tablet"
+        android:layout_marginEnd="@dimen/article_marginStart"
+        android:layout_marginBottom="@dimen/article_marginStart"
+        android:contentDescription="@string/bookmark_icon" />
+
+    <ImageView
+        android:id="@+id/article_share_tablet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/share_white"
+        app:layout_constraintTop_toBottomOf="@+id/article_desc_rhs"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="@dimen/article_marginStart"
+        android:layout_marginBottom="@dimen/article_marginStart"
+        android:contentDescription="@string/share_icon" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_refresh"
+        app:showAsAction="never"
+        android:title="@string/menu_refresh"/>
+
+    <item
+        android:id="@+id/menu_settings"
+        app:showAsAction="never"
+        android:title="@string/menu_settings"
+        />
+
+    <item
+        android:id="@+id/menu_bookmarks"
+        app:showAsAction="never"
+        android:title="@string/bookmarks"
+        />
+
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@drawable/baseline_search_white_18dp"
+        app:showAsAction="ifRoom|collapseActionView"
+        android:title="@string/search"
+        app:actionViewClass="android.support.v7.widget.SearchView" />
+
+    <item
+        android:id="@+id/menu_clear_search_history"
+        app:showAsAction="never"
+        android:title="@string/clearHistory"
+        />
+
+    <item
+        android:id="@+id/sign_out_menu"
+        android:title="@string/sign_out"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menu_about"
+        android:title="@string/about"
+        app:showAsAction="never"/>
+
+</menu>

@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/top_headlines_linear_layout"
+    android:background="#333"
+    android:orientation="vertical"
+    android:padding="@dimen/widget_margin"
+    tools:ignore="Overdraw">
+
+    <TextView
+        android:id="@+id/top_headlines_widget_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/article_title_textSize"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/article_marginTop"
+        android:paddingStart="@dimen/article_marginTop"
+        android:paddingEnd="@dimen/article_marginTop"/>
+
+    <GridView
+        android:id="@+id/top_headlines_grid_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:numColumns="1"
+        android:paddingStart="@dimen/article_marginTop"
+        android:paddingEnd="@dimen/article_marginTop" />
+
+    <TextView
+        android:id="@+id/empty_view"
+        android:text="@string/no_articles"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/article_marginTop"
+        android:paddingStart="@dimen/article_marginTop"
+        android:paddingEnd="@dimen/article_marginTop"/>
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+<resources>
+
+    //MainActivity
+    <string name="no_of_cols">5</string>
+
+</resources>

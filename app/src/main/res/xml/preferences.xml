@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/settings_text_title"
+        android:key="@string/settings_text_cat_key">
+
+        <com.example.android.newswiz.Utilities.myPreferenceList
+            android:key="@string/pref_fontSize_key"
+            android:title="@string/menu_fontSize_label"
+            android:dialogTitle="@string/menu_fontSize_label"
+            android:entries="@array/fontSizes"
+            android:entryValues="@array/fontSizes"
+            android:summary="@string/fontSize_summary"
+            android:defaultValue="@string/fontSize_default"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/themes_label"
+        android:key="@string/themes_label_key">
+
+        <com.example.android.newswiz.Utilities.myPreferenceList
+            android:key="@string/theme_key"
+            android:title="@string/themeLabel"
+            android:dialogTitle="@string/themeLabel"
+            android:entries="@array/themes"
+            android:entryValues="@array/themes"
+            android:summary="@string/theme_summary"
+            android:defaultValue="@string/theme_default"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/account_label"
+        android:key="@string/account_label_key">
+
+        <com.example.android.newswiz.Utilities.DeleteAccountPreference
+            android:key="@string/delete_accountKey"
+            android:title="@string/delete_account"
+            android:summary="@string/delete_account_summary"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="@string/widget_top_headlines_key"
+        android:title="@string/widget_label">
+
+
+               <com.example.android.newswiz.Utilities.myPreferenceList
+                   android:key="@string/widgetKey_top_headlines"
+                   android:title="@string/top_headlines_widget_label"
+                   android:dialogTitle="@string/choose_country"
+                   android:summary="@string/top_headlines_summary"
+                   android:entries="@array/countries"
+                   android:entryValues="@array/countries_entry_values"
+                   />
+
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

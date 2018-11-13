@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/about_activity_toolbar"
+        style="@style/ToolBarStyle"/>
+
+    <TextView
+        android:id="@+id/about_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/article_marginTop"
+        android:text="@string/about"
+        android:textSize="@dimen/article_title_textSize"
+        app:layout_constraintTop_toBottomOf="@id/about_activity_toolbar"
+        android:layout_marginStart="@dimen/article_marginTop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/about_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/about_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:autoLink="web|email"
+        android:text="@string/about_content"
+        android:paddingTop="@dimen/article_marginTop"
+        android:paddingLeft="@dimen/article_marginTop"
+        android:paddingRight="@dimen/article_marginTop"
+        android:textSize="18sp"/>
+
+</android.support.constraint.ConstraintLayout>

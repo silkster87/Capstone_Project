@@ -1,0 +1,121 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">News Wiz</string>
+    <string name="facebook_application_id" translatable="false">put your App ID here</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb + put your APP ID here</string>
+
+    <!--MainActivity-->
+    <string name="no_of_cols">3</string>
+    <string name="publishers_label">Publishers</string>
+    <string name="countries_label">Countries</string>
+    <string name="categories_label">Categories</string>
+    <string name="selected_label">0 selected</string>
+    <string name="done_label">Done</string>
+    <string name="clear_all_label">Clear All</string>
+    <string name="terms_of_service">https://newsapi.org/terms</string>
+    <string name="privacy_policy">https://newsapi.org/privacy</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="fui_tos_and_pp" translation_description="Global ToS and privacy policy message">Powered by NewsApi. Icons from <a href="http://flaticon.com">FlatIcon</a> and <a href="http://newsapi.org"> NewsApi. </a> By continuing, you are indicating that you accept our
+        <xliff:g example="https://google.com/terms" id="tos" translation_description="Terms of service text">%1$s</xliff:g> and
+        <xliff:g example="https://google.com/privacy" id="pp" translation_description="Privacy policy text">%2$s</xliff:g>.
+         </string>
+    <string name="fui_tos_and_pp_footer" translation_description="Global ToS and Privacy policy footer">Powered by NewsApi.</string>
+    <string name="error_message">No data to show - please try again.</string>
+    <string name="news_articles_title">NewsWiz</string>
+    <string name="article_image_desc">Article Image</string>
+    <string name="newsapi_startpoint">https://newsapi.org/v2/everything?</string>
+
+    <!-- Firebase folders labels -->
+    <string name="users_label">users</string>
+    <string name="sources_label">sources</string>
+    <string name="settings_label">settings</string>
+    <string name="bookmarks_label">bookmarks</string>
+
+    <!-- Article JSON keys -->
+    <string name="status_key">status</string>
+    <string name="error_label">error</string>
+    <string name="code_key">code</string>
+    <string name="message_key">message</string>
+    <string name="source_jsonkey">source</string>
+    <string name="id_jsonkey">id</string>
+    <string name="name_jsonkey">name</string>
+
+    <!-- AdMob (you can use these ID's for testing but you'll need to sign up for AdMob to get your ID's)-->
+    <string name="Admob_ID">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="AdUnit_ID">ca-app-pub-3940256099942544/1033173712</string>
+
+    <!--Menu-->
+    <string name="menu_refresh">Refresh</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_fontSize_label">Font Size </string>
+    <string name="menu_small_label">Small</string>
+    <string name="menu_medium_label">Medium</string>
+    <string name="menu_large_label">Large</string>
+
+    <!--Settings Activity Preferences-->
+    <string name="displayWidgetHeadlinesLabel">Display Widget - Top Headlines</string>
+    <string name="displayBookmarkedWidget">Display Widget - Bookmarked</string>
+    <string name="themeLabel">Theme </string>
+    <string name="lightLabel">Light</string>
+    <string name="darkLabel">Dark</string>
+    <string name="fontSize_default">Medium</string>
+    <string name="widget_top_headlines_sum">Displays the top headlines from the news sources chosen</string>
+    <string name="widget_bookmarked_sum">Displays the bookmarked articles</string>
+    <string name="theme_default">Dark</string>
+    <string name="pref_fontSize_key">pref_fontSize</string>
+    <string name="widget_top_headlines_key">pref_widget_top_headlines</string>
+    <string name="widget_bookmarked_key">pref_widget_bookmarked</string>
+    <string name="theme_key">pref_theme</string>
+    <string name="pref_widgets_title">Widgets</string>
+    <string name="pref_widgets_title_key">widgetsTitleKey</string>
+    <string name="fontSize_summary">Font size of article descriptions</string>
+    <string name="theme_summary">Light or Dark Background</string>
+    <string name="settings_title">Settings</string>
+
+    <!--Search dialog -->
+    <string name="search_hint">Search News</string>
+    <string name="search">Search</string>
+    <string name="settings_text_title">Text</string>
+    <string name="settings_text_cat_key">textKey</string>
+    <string name="themes_label">Background</string>
+    <string name="themes_label_key">themesKey</string>
+    <string name="searchResults">Search Results</string>
+    <string name="clearHistory">Clear Search History</string>
+    <string name="dialog_clear_history">Clear search history?</string>
+    <string name="ok_confirm">OK</string>
+    <string name="cancel_dialog">Cancel</string>
+    <string name="account_label">Account</string>
+    <string name="account_label_key">accountKey</string>
+    <string name="delete_accountKey">deleteAccountKey</string>
+    <string name="delete_account">Remove Account</string>
+    <string name="delete_account_summary">Delete account from this app</string>
+    <string name="delete_account_text">Remove Account from this app? This will also sign you out.</string>
+    <string name="remove_account_title">Remove Account?</string>
+    <string name="remove_account_msg">This will also sign you out of the app.</string>
+    <string name="send_to">Share</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="about">About</string>
+    <string name="about_content">NewsWiz app is created by Silky Ng as a part of the Udacity Android Developer course.\n\nSpecial thanks in this app are given to https://www.flaticon.com for the logo, https://newsapi.org for the news sources icons and the API.\n\nPlease report any bugs or comments or suggestions to silky.ng@gmail.com</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="top_headlines">Top Headlines</string>
+    <string name="no_articles">Error - No articles to display</string>
+    <string name="preference_widget_key">preference_widget_key</string>
+    <string name="json_topheadlines_key">json_topheadlines_key</string>
+    <string name="top_headlines_widget_label">Top Headlines</string>
+    <string name="top_headlines_summary">Choose country to display top headlines</string>
+    <string name="country_default">gb</string>
+    <string name="widgetKey_top_headlines">topHeadlineskey</string>
+    <string name="widget_label">Widgets</string>
+    <string name="choose_country">Choose Country</string>
+    <string name="categories_icon">Categories Icon</string>
+    <string name="countries_icon">Country Icon</string>
+    <string name="bookmark_icon">Bookmark Icon</string>
+    <string name="share_icon">Share Icon</string>
+    <string name="article_image">Article Image</string>
+    <string name="publisher_icon">Publisher Icon</string>
+    <string name="bookmarked_articles">Bookmarked Articles</string>
+    <string name="about_newswiz">About NewsWiz</string>
+    <string name="logout_action">com.package.ACTION_LOGOUT</string>
+    <string name="error_no_data">No data - internet connection or news api server down.</string>
+
+</resources>

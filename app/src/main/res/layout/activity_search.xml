@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/search_results_coord_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+    <LinearLayout
+        android:id="@+id/search_results_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/search_results_toolbar"
+            style="@style/ToolBarStyle" />
+
+        <!--
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/search_results_recyclerView"
+            app:layout_constraintTop_toBottomOf="@+id/search_results_toolbar"
+            app:layout_constraintVertical_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+            -->
+
+        <FrameLayout
+            android:id="@+id/search_results_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+             />
+
+    </LinearLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,71 @@
+//noinspection GradleCompatible
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.example.android.newswiz"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField("String", "NEWS_API_KEY", NEWS_API_KEY)
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+    buildToolsVersion '28.0.3'
+}
+
+
+dependencies {
+    def nav_version = "1.0.0-alpha07"
+    def android_support_version = "27.1.1"
+    //Android Navigation
+    implementation "android.arch.navigation:navigation-fragment:$nav_version"
+    // use -ktx for Kotlin
+    implementation "android.arch.navigation:navigation-ui:$nav_version"
+    // use -ktx for Kotlin
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "com.android.support:appcompat-v7:$android_support_version"
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation "com.android.support:recyclerview-v7:$android_support_version"
+    implementation "com.android.support:support-v4:$android_support_version"
+    //Android Testing
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support:support-annotations:28.0.0'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    //Firebase
+    implementation 'com.google.firebase:firebase-core:16.0.4'
+    implementation 'com.firebaseui:firebase-ui-auth:4.1.0'
+    implementation 'com.google.firebase:firebase-auth:16.0.5'
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
+    implementation 'com.google.firebase:firebase-config:16.1.0'
+    implementation 'com.google.firebase:firebase-database:16.0.4'
+    implementation 'com.google.firebase:firebase-ads:17.0.0'
+    //Butterknife
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    //Okhttp
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+    //Picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    //Facebook
+    implementation 'com.facebook.android:facebook-android-sdk:4.37.0'
+    //TextView Autofit
+    implementation 'me.grantland:autofittextview:0.2.1'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'android.arch.lifecycle:extensions:1.1.1'
+    implementation 'com.neovisionaries:nv-i18n:1.22'
+}
+apply plugin: 'com.google.gms.google-services'

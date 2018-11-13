@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/constraint_layout_publisher_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--This layout file constructs the layout for an individual publisher that will populate
+     the grid view in the Main Activity. It will show the publisher icon and text underneath-->
+
+
+    <ImageView
+        android:id="@+id/publisher_icon"
+        android:layout_width="@dimen/standard_icon_size"
+        android:layout_height="@dimen/standard_icon_size"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:contentDescription="@string/publisher_icon" />
+
+    <TextView
+        android:id="@+id/publisher_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/publisher_icon"
+        app:layout_constraintLeft_toLeftOf="@+id/publisher_icon"
+        app:layout_constraintRight_toRightOf="@+id/publisher_icon"
+        android:textSize="@dimen/publisher_fontSize"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:layout_marginBottom="@dimen/standard_margin"
+        android:singleLine="true"
+        />
+
+</android.support.constraint.ConstraintLayout>
